@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import stylex from "@stylexjs/stylex";
+// import stylex from "@stylexjs/stylex";
 
 import ExpandingCards from "../../components/ExpandingCards";
 
@@ -7,17 +7,17 @@ import ExpandingCards from "../../components/ExpandingCards";
  * styles
  */
 
-const styles = stylex.create({
-  container: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "100vh",
-    overflow: "hidden",
-    margin: 0,
-    // width: "90vw",
-  },
-});
+// const styles = stylex.create({
+//   container: {
+//     display: "flex",
+//     alignItems: "center",
+//     justifyContent: "center",
+//     height: "100vh",
+//     overflow: "hidden",
+//     margin: 0,
+//     // width: "90vw",
+//   },
+// });
 
 /**
  * types
@@ -66,9 +66,9 @@ export const Primary: Story = {
     ],
   },
   render: (args) => (
-    <div {...stylex.props(styles.container)}>
-      <ExpandingCards panels={args.panels} />,
-    </div>
+    // <div {...stylex.props(styles.container)}>
+    <ExpandingCards panels={args.panels} />
+    // </div>
   ),
   parameters: {
     // layout: "fullscreen",
